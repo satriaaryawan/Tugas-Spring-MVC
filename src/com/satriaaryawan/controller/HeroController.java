@@ -6,13 +6,20 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HeroController {
 	@RequestMapping("/index")
-	public String index(HttpServletRequest request,Model model) {
+	public String index() {
+		return "index";
+	}
+	
+	
+	
+	@RequestMapping("/hero")
+	public String hero(HttpServletRequest request, Model model) {
+		
 		// Create random quotes
 		String quotes [] = {
 				"Make way for your Queen.",
@@ -28,17 +35,6 @@ public class HeroController {
 		int index = randomQuotes.nextInt(quotes.length);
 		String random = quotes[index];
 		model.addAttribute("quotes", random);
-		
-		//Binding data to object
-		HeroModel heroModel = new HeroModel();
-		model.addAttribute("Hero", heroModel);
-		
-		return "index";
-	}
-	
-	
-	@RequestMapping("/hero")
-	public String hero(@ModelAttribute("Hero") HeroModel heroModel) {
 		return "hero";
 	}
 }

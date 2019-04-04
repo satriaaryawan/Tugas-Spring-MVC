@@ -37,15 +37,6 @@
 						<input type="text" name="heroSpeed" placeholder="${Hero.heroSpeed}" class="form-control" readonly="readonly">
 						<i class="zmdi zmdi-account"></i>
 					</div>
-					<div class="form-wrapper">
-						<select name="" id="" class="form-control">
-							<option value="" disabled selected>Gender</option>
-							<option value="male">Male</option>
-							<option value="femal">Female</option>
-							<option value="other">Other</option>
-						</select>
-						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
-					</div>
 					<h3>${quotes}</h3>
 				</form>
 			</div>
