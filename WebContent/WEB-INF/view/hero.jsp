@@ -22,19 +22,19 @@
 				<form>
 					<h3>Hero Information</h3>
 					<div class="form-wrapper">
-						<input type="text" name="heroName" placeholder="${Hero.heroName}" class="form-control" readonly="readonly">
+						<input type="text" name="heroName" placeholder="${param.heroName}" class="form-control" readonly="readonly">
 						<i class="zmdi zmdi-account"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="text" name="heroHitPoints" placeholder="${Hero.heroHitPoints}" class="form-control" readonly="readonly">
+						<input type="text" name="heroHitPoints" placeholder="${param.heroHitPoints}" class="form-control" readonly="readonly">
 						<i class="zmdi zmdi-account"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="text" name="heroMana" placeholder="${Hero.heroMana}" class="form-control" readonly="readonly">
+						<input type="text" name="heroMana" placeholder="${param.heroMana}" class="form-control" readonly="readonly">
 						<i class="zmdi zmdi-account"></i>
 					</div>
 					<div class="form-wrapper">
-						<input type="text" name="heroSpeed" placeholder="${Hero.heroSpeed}" class="form-control" readonly="readonly">
+						<input type="text" name="heroSpeed" placeholder="${param.heroSpeed}" class="form-control" readonly="readonly">
 						<i class="zmdi zmdi-account"></i>
 					</div>
 					<h3>${quotes}</h3>
